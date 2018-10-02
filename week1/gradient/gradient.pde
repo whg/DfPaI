@@ -6,5 +6,3 @@ loadPixels();
 // do something here!
 
 updatePixels();
-
-save("gradient.png");
