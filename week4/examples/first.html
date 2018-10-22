@@ -1,0 +1,28 @@
+
+<style media="screen">
+  #thing {
+    background: #ffff00;
+  }
+</style>
+
+<span id="thing">at the beginning</span>
+
+
+<script type="text/javascript">
+
+  function writeText() {
+    var span = document.querySelector("#thing");
+    var date = new Date();
+    span.innerHTML = date;
+  }
+
+  setInterval(writeText, 50);
+
+  var span = document.querySelector("#thing");
+  span.onmousedown = function(e) {
+    // this is how you print something in the console
+    console.log("press!");
+    console.log(e);
+  };
+
+</script>

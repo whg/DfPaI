@@ -1,0 +1,26 @@
+
+<!-- import library -->
+<script src="gyronorm.complete.min.js" charset="utf-8"></script>
+
+<span id="orientation"></span>
+
+<script type="text/javascript">
+  var gn = new GyroNorm();
+
+  var socket = new WebSocket("ws://192.168.0.8:9999/data");
+  var id = Math.random();
+
+  function orientationCallback(data) {
+    var x = data.do.gamma;
+    var y = data.do.beta;
+    if (socket.readyState === WebSocket.OPEN) {
+      socket.send(id + "," + x + "," + y);
+      console.log("sent");
+    }
+  }
+
+  gn.init().then(function() {
+    gn.start(orientationCallback);
+  });
+
+</script>
