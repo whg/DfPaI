@@ -27,10 +27,11 @@ void webSocketServerEvent(String msg) {
   try {
     String[] parts = split(msg, ',');
     String id = parts[0];
-    int x = int(parts[1]);
-    int y = int(parts[2]);
-    x %= width;
-    y %= height;
+    int gamma = int(parts[1]);
+    int beta = int(parts[2]);
+    
+    float x = map(gamma, -180, 180, 0, width);
+    float y = map(beta, -180, 180, 0, height);
 
     if (positions.containsKey(id)) {
       PVector pos = (PVector) positions.get(id);
