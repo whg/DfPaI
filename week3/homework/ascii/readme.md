@@ -1,6 +1,10 @@
 # ascii
 
-Read `img.png` and print out in ASCII.
+Read `img.png`:
+
+![img](https://raw.githubusercontent.com/whg/DfPaI/master/week3/homework/ascii/img.png)
+
+and print out in ASCII.
 
 First try something that looks like this:
 
@@ -75,3 +79,4 @@ s......       ......sssssssssss..............ssss&&&&&&&ssss....
 &&&&&&&sss...................               ...ss&&&&&&&&&&&&&&&
 &&&&&&&&sss.................                ...s&&&&&&&&&&&&&&&&
 ```
+You don't have to use the character I used!
