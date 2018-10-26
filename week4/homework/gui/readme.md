@@ -2,6 +2,8 @@
 
 There are 3 milestones in this homework, feel free to stop any of them.
 
+You don't have to change the background, feel free to control any parameter you like!
+
 ## 1
 
 Create a single slider that changes the background colour
